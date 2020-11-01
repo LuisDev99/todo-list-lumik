@@ -6,7 +6,11 @@
   </div>
   <div>
     <label>Estado: </label>
-    <input [(ngModel)]="task.state" />
+    <select matNativeControl [(ngModel)]="task.state">
+      <option value="Pendiente">Pendiente</option>
+      <option value="En Progreso">En Progreso</option>
+      <option value="Completada">Completada</option>
+    </select>
   </div>
   <div>
     <label>Tiempo estimado: </label>

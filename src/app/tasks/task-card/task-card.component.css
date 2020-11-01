@@ -1,14 +1,12 @@
 .task-card {
   display: flex;
+  flex-direction: column;
 
   width: 250px;
   height: 250px;
 
   justify-content: center;
   align-items: center;
-
-  /* margin: 0 auto; */
-  /* margin-top: 10px; */
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -19,8 +17,6 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.task-card-header {
-}
-
 .task-card-footer {
+  margin-top: 30px;
 }

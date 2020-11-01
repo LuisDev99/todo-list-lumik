@@ -18,12 +18,12 @@ export class TasksComponent {
     let time = new Date().getMinutes().toString() + " minutos";
 
     this.tasks = [ 
-      {name: "Tarea 1", description: "tarea Honduras", estimatedTime: time, state: "pending"},
-      {name: "Tarea 2", description: "tarea Progra", estimatedTime: time, state: "pending"},
-      {name: "Tarea 3", description: "tarea COD", estimatedTime: time, state: "pending"},
-      {name: "Tarea 4", description: "tarea ASD", estimatedTime: time, state: "pending"},
-      {name: "Tarea 5", description: "tarea COMPI", estimatedTime: time, state: "pending"},
-      {name: "Tarea 6", description: "tarea SISO", estimatedTime: time, state: "pending"},
+      {name: "Tarea 1", description: "tarea Honduras", estimatedTime: time, state: "Pendiente"},
+      {name: "Tarea 2", description: "tarea Progra", estimatedTime: time, state: "Pendiente"},
+      {name: "Tarea 3", description: "tarea COD", estimatedTime: time, state: "Pendiente"},
+      {name: "Tarea 4", description: "tarea ASD", estimatedTime: time, state: "Pendiente"},
+      {name: "Tarea 5", description: "tarea COMPI", estimatedTime: time, state: "Pendiente"},
+      {name: "Tarea 6", description: "tarea SISO", estimatedTime: time, state: "Pendiente"},
     ];
   }
 
