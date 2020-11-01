@@ -1,1 +1,28 @@
-<p>task-detail works!</p>
+<h1 mat-dialog-title>{{ data.name }}</h1>
+<div mat-dialog-content class="task-detail">
+  <div>
+    <label>Nombre Tarea: </label>
+    <input [(ngModel)]="task.name" />
+  </div>
+  <div>
+    <label>Estado: </label>
+    <input [(ngModel)]="task.state" />
+  </div>
+  <div>
+    <label>Tiempo estimado: </label>
+    <input [(ngModel)]="task.estimatedTime" />
+  </div>
+  <div>
+    <label>Descripcion: </label>
+    <br />
+    <textarea rows="5" cols="50" [(ngModel)]="task.description"> </textarea>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="task">Guardar Cambios</button>
+  &nbsp;
+  <button mat-button (click)="onExit()" cdkFocusInitial>
+    Salir [Sin Guardar]
+  </button>
+</div>
